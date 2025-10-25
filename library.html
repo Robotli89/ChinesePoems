@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search classical Chinese poems by keyword, dynasty, or curated collection with characters, pinyin, and translations.">
+    <title>Chinese Poems | Library Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-library">
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <span class="brand-mark" aria-hidden="true">詩</span>
+                <div>
+                    <p class="brand-title">Chinese Poems</p>
+                    <p class="brand-subtitle">Timeless voices from the Middle Kingdom</p>
+                </div>
+            </div>
+            <nav class="site-nav" id="primary-menu" aria-label="Primary navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+                        Collections
+                        <span class="nav-dropdown-icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="index.html#collections">Highlights</a></li>
+                        <li><a href="collections.html">All Collections</a></li>
+                        <li><a href="collections/moonlit-evenings.html">Moonlit Evenings</a></li>
+                        <li><a href="collections/wine-and-revelry.html">Wine &amp; Revelry</a></li>
+                        <li><a href="collections/brushstrokes.html">Brushstrokes</a></li>
+                        <li><a href="collections/mountain-retreats.html">Mountain Retreats</a></li>
+                    </ul>
+                </div>
+                <a href="library.html" aria-current="page">Library</a>
+                <a href="index.html#featured">Featured</a>
+                <a href="index.html#timeline">Dynasties</a>
+                <a href="index.html#newsletter">Newsletter</a>
+            </nav>
+            <button class="menu-button" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container narrow">
+                <p class="page-kicker">Poetry library</p>
+                <h1>Search the anthology</h1>
+                <p class="page-description">Look up poems by keyword, dynasty, or curated collection. Every result includes the original characters, full pinyin romanization, and translation to support learners and enthusiasts alike.</p>
+            </div>
+        </section>
+
+        <section class="library-search" data-library-root>
+            <div class="container">
+                <div class="search-controls">
+                    <label for="poem-search" class="control-label">Search</label>
+                    <input type="search" id="poem-search" name="q" placeholder="Search by title, poet, theme, or Pinyin" data-poem-search>
+                </div>
+                <div class="filter-grid">
+                    <fieldset class="filter-group">
+                        <legend>Filter by dynasty</legend>
+                        <label class="filter-option">
+                            <input type="checkbox" value="Tang" data-dynasty-filter>
+                            <span>Tang</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" value="Song" data-dynasty-filter disabled>
+                            <span>Song <small>(coming soon)</small></span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" value="Eastern Jin" data-dynasty-filter>
+                            <span>Eastern Jin</span>
+                        </label>
+                    </fieldset>
+                    <fieldset class="filter-group">
+                        <legend>Filter by collection</legend>
+                        <label class="filter-option">
+                            <input type="checkbox" value="moonlit-evenings" data-collection-filter>
+                            <span>Moonlit Evenings</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" value="wine-and-revelry" data-collection-filter>
+                            <span>Wine &amp; Revelry</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" value="brushstrokes" data-collection-filter>
+                            <span>Brushstrokes</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" value="mountain-retreats" data-collection-filter>
+                            <span>Mountain Retreats</span>
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="results-header">
+                    <p><strong data-results-count>0 poems</strong> match your current filters.</p>
+                    <p class="results-tip">Tip: Try searching for "yuè" to see all lines with the moon.</p>
+                </div>
+                <div class="poem-results" data-poem-results></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Chinese Poems. Crafted with reverence for the classics.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Support the project</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>

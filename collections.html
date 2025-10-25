@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse curated collections of classical Chinese poems with characters, pinyin, and translations.">
+    <title>Chinese Poems | Curated Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-collections">
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <span class="brand-mark" aria-hidden="true">詩</span>
+                <div>
+                    <p class="brand-title">Chinese Poems</p>
+                    <p class="brand-subtitle">Timeless voices from the Middle Kingdom</p>
+                </div>
+            </div>
+            <nav class="site-nav" id="primary-menu" aria-label="Primary navigation">
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" type="button" aria-expanded="false">
+                        Collections
+                        <span class="nav-dropdown-icon" aria-hidden="true"></span>
+                    </button>
+                    <ul class="nav-dropdown-menu">
+                        <li><a href="index.html#collections">Highlights</a></li>
+                        <li><a href="collections.html" aria-current="page">All Collections</a></li>
+                        <li><a href="collections/moonlit-evenings.html">Moonlit Evenings</a></li>
+                        <li><a href="collections/wine-and-revelry.html">Wine &amp; Revelry</a></li>
+                        <li><a href="collections/brushstrokes.html">Brushstrokes</a></li>
+                        <li><a href="collections/mountain-retreats.html">Mountain Retreats</a></li>
+                    </ul>
+                </div>
+                <a href="library.html">Library</a>
+                <a href="index.html#featured">Featured</a>
+                <a href="index.html#timeline">Dynasties</a>
+                <a href="index.html#newsletter">Newsletter</a>
+            </nav>
+            <button class="menu-button" aria-expanded="false" aria-controls="primary-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container narrow">
+                <p class="page-kicker">Curated paths</p>
+                <h1>Choose your listening path</h1>
+                <p class="page-description">Each collection gathers poems that share a mood, ritual, or artistic sensibility. Follow moonlit journeys, celebrate with wine, or retreat into the mountains&mdash;each entry includes the characters, pinyin, and translation.</p>
+            </div>
+        </section>
+
+        <section class="collections-list">
+            <div class="container">
+                <div class="collection-grid expanded">
+                    <article class="collection-card">
+                        <h3>Moonlit Evenings</h3>
+                        <p>Quiet meditations on distance, friendship, and moonlight guiding travelers home.</p>
+                        <ul class="collection-details">
+                            <li>Includes Li Bai's <em>Quiet Night Thoughts</em>.</li>
+                            <li>Perfect for late-night study and reflection.</li>
+                            <li>Characters with matching pinyin for tone practice.</li>
+                        </ul>
+                        <a class="button ghost" href="collections/moonlit-evenings.html">Open collection</a>
+                    </article>
+                    <article class="collection-card">
+                        <h3>Wine &amp; Revelry</h3>
+                        <p>Raise a cup with poets who turned gatherings into immortal verses about joy and impermanence.</p>
+                        <ul class="collection-details">
+                            <li>Features <em>Bring in the Wine</em> by Li Bai.</li>
+                            <li>Includes pastoral toasts from Tao Yuanming.</li>
+                            <li>Great for learning convivial vocabulary.</li>
+                        </ul>
+                        <a class="button ghost" href="collections/wine-and-revelry.html">Pour a cup</a>
+                    </article>
+                    <article class="collection-card">
+                        <h3>Brushstrokes</h3>
+                        <p>Poems that read like paintings, focusing on light, texture, and artistic craftsmanship.</p>
+                        <ul class="collection-details">
+                            <li>Admire Wang Wei's painterly landscapes.</li>
+                            <li>Study tonal patterns with side-by-side pinyin.</li>
+                            <li>Pair with calligraphy or watercolor practice.</li>
+                        </ul>
+                        <a class="button ghost" href="collections/brushstrokes.html">View artistry</a>
+                    </article>
+                    <article class="collection-card">
+                        <h3>Mountain Retreats</h3>
+                        <p>Verses from hermit poets and wanderers who sought renewal in nature's rhythm.</p>
+                        <ul class="collection-details">
+                            <li>Includes cascading waterfalls and quiet mountain huts.</li>
+                            <li>Ideal for mindfulness exercises.</li>
+                            <li>Characters paired with pinyin for tone review.</li>
+                        </ul>
+                        <a class="button ghost" href="collections/mountain-retreats.html">Walk the trail</a>
+                    </article>
+                </div>
+                <div class="collection-cta">
+                    <p>Looking for something specific?</p>
+                    <a class="button primary" href="library.html">Search the full library</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Chinese Poems. Crafted with reverence for the classics.</p>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Support the project</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
